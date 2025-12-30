@@ -4,14 +4,12 @@
     {
       "src": "index.html",
       "use": "@vercel/static"
-    },
-    {
-      "src": "sitemap.xml",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
-    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
-    { "src": "/(.*)", "dest": "/index.html" }
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
   ]
 }
